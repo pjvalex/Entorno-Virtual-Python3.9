@@ -40,7 +40,7 @@
      <string>Inventario</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_3">
+   <widget class="QPushButton" name="clientes_boton">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -104,7 +104,7 @@
      <x>0</x>
      <y>0</y>
      <width>730</width>
-     <height>21</height>
+     <height>22</height>
     </rect>
    </property>
   </widget>

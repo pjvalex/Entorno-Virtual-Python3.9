@@ -2,6 +2,7 @@ from PyQt6 import uic
 from GUI.ordenesTrabajo import OrdenesTrabajoWindow
 from GUI.inventario import InventarioWindow
 from GUI.reportes import ReportesWindow
+from GUI.clientes import ClientesWindow
 
 class MainWindow():
     def __init__(self):
@@ -10,6 +11,7 @@ class MainWindow():
         self.main.show()
         self.main.ordenesTrabajoBoton.clicked.connect(self.abrir_ventana_ordenes_trabajo)
         self.main.inventarioBoton.clicked.connect(self.abrir_ventana_inventario)
+        self.main.clientes_boton.clicked.connect(self.abrir_ventana_clientes)
         self.main.reportesBoton.clicked.connect(self.abrir_ventana_reportes)
         self.main.cerrarSesionBoton.clicked.connect(self.cerrar_sesion)
         
@@ -22,6 +24,9 @@ class MainWindow():
 
     def abrir_ventana_reportes(self):
         self.reportes_window = ReportesWindow()
+    
+    def abrir_ventana_clientes(self):
+        self.clientes_window = ClientesWindow()
 
     def cerrar_sesion(self):
         self.main.hide()
